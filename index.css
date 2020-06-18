@@ -1,0 +1,102 @@
+import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: #FCF0CC;
+    font-family: "lato", sans-serif;
+}
+
+nav {
+    background-color: #A64253;
+    color:#fff;
+    display:flex;
+    justify-content: flex-end ;
+    padding:15px;
+}
+
+nav a {
+    color:#fff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+header {
+    background-image: url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+    background-size: cover;
+    background-position: center center;
+    color:#fff;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;  
+    position:relative;
+}
+
+header::after {
+    content:"";
+    background-color: #000;
+    position:absolute;
+    top:0; 
+    left:0;
+    right:0;
+    bottom:0;
+    opacity:0.8;
+}
+
+header * {
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 60px;
+    margin-bottom: 0;
+    margin-top:0;
+}
+
+header p {
+    font-size: 30px;
+    margin: 0;
+}
+
+section {
+    padding: 30px;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 0;
+}
+
+section p {
+    margin-top: 0;
+}
+  
+.socialsec {
+    background-color: #861657;
+    background-color: #A64253;
+}
+
+.social-ul {
+    display:flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+}
+
+.social-ul a{
+    color:#fff;
+    font-size:30px;
+    margin:0 10px;
+}
+footer {
+    background-color: #861657;
+    color:#fff; 
+    padding:10px;
+    text-align:center;
+}
